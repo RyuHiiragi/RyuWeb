@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryuu Hiiragi | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo">RH</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#tech">Tech Stack</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="about" class="glass-card profile-section">
+            <div class="profile-grid">
+                <div class="profile-image-container" style="position: relative;">
+                    <img src="https://i.pinimg.com/736x/79/9f/7e/799f7ecda954a40bd90d3510b2cd77c2.jpg" 
+                         class="profile-pic" 
+                         alt="Ryuu Hiiragi profile picture">
+                    <div class="profile-status">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Available for projects</span>
+                    </div>
+                </div>
+                <div class="profile-content">
+                    <h1 class="glitch-text" data-text="Ryuu Hiiragi">Ryuu Hiiragi</h1>
+                    <p class="tagline">Ordinary student who happens to love programming, network configuration (though I'm not a big fan), and IoT.</p>
+                    <div class="about-me">
+                        <p>I'm an ordinary student with a passion for programming, dabbling in network configuration (even if it's not my favorite), and exploring the world of IoT. I enjoy creating things that blend hardware and software, always looking for fun and innovative solutions.</p>
+                    </div>
+                    <a href="#" class="cv-btn" id="download-cv">Download CV <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="glass-card projects-section">
+            <h2 class="section-title"><i class="fas fa-project-diagram"></i> Projects</h2>
+            <div class="project-grid" id="projects-container">
+                <div class="project-loading">
+                    <p>Loading projects...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech" class="glass-card tech-section">
+            <h2 class="section-title"><i class="fas fa-tools"></i> Tech Stack</h2>
+            <div class="tech-grid">
+                <div class="tech-item" data-skill="C++">
+                    <i class="fas fa-code"></i>
+                    <span>C++</span>
+                </div>
+                <div class="tech-item" data-skill="Python">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tech-item" data-skill="Arduino">
+                    <i class="fab fa-arduino"></i>
+                    <span>Arduino</span>
+                </div>
+                <div class="tech-item" data-skill="HTML">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="tech-item" data-skill="Cisco">
+                    <i class="fas fa-network-wired"></i>
+                    <span>Cisco</span>
+                </div>
+                <div class="tech-item" data-skill="Mikrotik">
+                    <i class="fas fa-wifi"></i>
+                    <span>Mikrotik</span>
+                </div>
+                <div class="tech-item" data-skill="IoT">
+                    <i class="fas fa-microchip"></i>
+                    <span>IoT</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="glass-card contact-section">
+            <h2 class="section-title"><i class="fas fa-envelope"></i> Get In Touch</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+                <div id="form-status" class="form-status"></div>
+            </form>
+        </section>
+
+        <div class="social-links">
+            <a href="https://github.com/RyuHiiragi" class="social-btn github" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/kysukamieayam" class="social-btn instagram" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Ryuu Hiiragi. All rights reserved.</p>
+        <small>Powered by Vercel</small>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
